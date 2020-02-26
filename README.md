@@ -12,7 +12,7 @@ Montamos toda a infraestrutura utilizando docker.
 </ol>
 
 ### Diagrama da API
-<img src=”caminho até a imagem”>
+<img src=”diagrama.png”>
 
 
 
