@@ -56,6 +56,6 @@ Para deletar basta escolher o metodo "delete" e inserir o id do seu pacote, assi
 ### Descrição da Versão:
 <ul>
   <li>V1.0 Essa primeira versão apenas temos os metodos: POST, GET e DELETE. Não conseguimos fazer update de pacotes ainda. </li>
-  <li>V1.1 A versão 1.0 utilizava o Restify@7.0 que possui uma vunerabilidade no csv-parse, recebiamos um warner toda vez que utilizavamos o "npm install" mas resolvemos isso utilizando a versão Restify@8.5.1 </li>
+  <li>V1.1 A versão 1.0 utilizava o Restify@7.0 que possui uma vunerabilidade no csv-parse, recebiamos um warning toda vez que utilizavamos o "npm install" mas resolvemos isso utilizando a versão Restify@8.5.1 </li>
 </ul>
 
