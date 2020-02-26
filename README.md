@@ -40,5 +40,22 @@ Para parar basta usar:
 Postman é um software bem legal para testarmos nossa API,vamos dar uma olhada nos passos a seguir de como é fácil fazer o uso dessa ferramenta.
 
 #### Meu primeiro GET nos pacotes!!!!
+<img src=get.PNG>
+Basta inserir o endereço IP do nosso NGINX/packages para dar um GET!
 
+#### Inserindo um novo pacote!
+<img src=post.PNG>
+Para inserir um pacote basta deixar o Postman dessa maneira, em "Nome do pacote" Insira o nome que deseja armazenar e
+Coloque uma descrição pra ele
+
+#### Deletando um pacote
+<img src=delete.PNG>
+Para deletar basta escolher o metodo "delete" e inserir o id do seu pacote, assim como está na imagem.
+
+
+### Descrição da Versão:
+<ul>
+  <li>V1.0 Essa primeira versão apenas temos os metodos: POST, GET e DELETE. Não conseguimos fazer update de pacotes ainda. </li>
+  <li>V1.1 A versão 1.0 utilizava o Restify@7.0 que possui uma vunerabilidade no csv-parse, recebiamos um warner toda vez que utilizavamos o "npm install" mas resolvemos isso utilizando a versão Restify@8.5.1 </li>
+</ul>
 
