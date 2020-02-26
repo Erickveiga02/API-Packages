@@ -18,7 +18,7 @@ Montamos toda a infraestrutura utilizando docker.
 
 
 ### Start da API!
-Para utilizarmos a nossa API é necessário
+Para utilizarmos a nossa API é necessário:
 <ol>
   <li>Docker</li>
   <li>Docker-compose</li>
@@ -28,11 +28,17 @@ Para utilizarmos a nossa API é necessário
 Tendo os requisistos já instalados na sua máquina, vamos iniciar nossos containers.
 Vá na raiz do arquivo onde encontra-se o arquivo "docker-compose.yml" e utilize:
 
-docker-compose up -d --build
+#### docker-compose up -d --build
 
 Com esse comando vamos iniciar nossos containers.
 Para parar basta usar:
 
-docker-compose stop
+#### docker-compose stop
 
 ### O postman!
+
+Postman é um software bem legal para testarmos nossa API,vamos dar uma olhada nos passos a seguir de como é fácil fazer o uso dessa ferramenta.
+
+#### Meu primeiro GET nos pacotes!!!!
+
+
