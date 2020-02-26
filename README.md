@@ -12,7 +12,7 @@ Montamos toda a infraestrutura utilizando docker.
 </ol>
 
 ### Diagrama da API
-<img src=”diagrama.png”>
+<img src=”https://github.com/Erickveiga02/hurb-teste/blob/master/Diagrama.PNG”>
 
 
 
