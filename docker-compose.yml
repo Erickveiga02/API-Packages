@@ -1,0 +1,45 @@
+version: '2'
+
+services:
+
+    frontend:
+        build: ./nginx
+        ports:
+            - "80:80"
+        networks:
+            - app-network
+    mysql_db:
+        container_name: mysql_db
+        build: ./db
+        environment:
+            MYSQL_ROOT_PASSOWRD: 'd@t@b@s3'
+        command:  --default-authentication-plugin=mysql_native_password
+        volumes:
+            - ./db:/docker-entrypoint-initdb.d
+        ports:
+            - '3306:3306'
+        expose:
+            - '3306'
+        networks:
+            - app-network
+    backend:
+        container_name: backend_nodejs
+        build: ./nodejs
+        ports:
+            - "8888:8888"
+        links:
+            - "mysql_db:mysql_db"
+        depends_on:
+            - mysql_db
+        environment:
+          DATABASE_HOST: mysql_db
+        networks:
+            - app-network
+              
+networks:     
+    app-network:
+       driver: bridge   
+
+
+
+
