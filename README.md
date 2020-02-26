@@ -1,23 +1,23 @@
 ### Pacotes!
-#Introdução:
+# Introdução:
 
 Foi criado uma API utilizando Nodejs para inserir pacotes. Utilizamos um proxy reverso com nginx e mysql como nosso banco de dados.
 Montamos toda a infraestrutura utilizando docker.
 
-#Containers:
+# Infra:
 <ol>
   <li>Nodejs - Porta: 8888</li>
   <li>Nginx - Porta: 80</li>
   <li>Mysql - Porta: 3306</li>
 </ol>
 
-#Diagrama da API
+# Diagrama da API
 <img src=”caminho até a imagem”>
 
 
 
 
-#Start
+# Start da API!
 Para utilizarmos a nossa API é necessário
 <ol>
   <li>Docker</li>
@@ -35,4 +35,4 @@ Para parar basta usar:
 
 docker-compose stop
 
-#O postman!
+# O postman!
