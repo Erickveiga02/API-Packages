@@ -27,3 +27,11 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/db/dockerfile'
         tags: |
           $(tag)
+
+    - task: Docker@3
+      displayName: Build a image
+      inputs:
+        command: build
+        dockerfile: '$(Build.SourcesDirectory)/nginx/dockerfile'
+        tags:
+          ¨$(tag)
