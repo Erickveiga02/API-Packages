@@ -3,8 +3,9 @@
   inputs:
     containerregistrytype: 'Container Registry'
     dockerComposeFile: '**/docker-compose.yml'
-    action: 'Run a Docker Compose command'
+    action: 'docker-compose up -d'
 
+version: '2'
 services:
 
     frontend:
