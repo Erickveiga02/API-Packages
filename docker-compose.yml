@@ -1,4 +1,4 @@
-version: '2'
+#version: '2'
 
 services:
 
@@ -36,7 +36,7 @@ services:
         networks:
             - app-network
               
-networks:     
+network:     
     app-network:
        driver: bridge   
 
