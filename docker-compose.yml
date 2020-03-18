@@ -5,9 +5,6 @@
     dockerComposeFile: '**/docker-compose.yml'
     action: 'docker-compose up -d'
 
-version: '2'
-services:
-
     frontend:
         build: ./nginx
         ports:
