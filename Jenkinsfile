@@ -1,5 +1,5 @@
-node {
-    agent node1
+pipeline {
+    agent any
     stage('Clone sources') {
         git url: 'https://github.com/Erickveiga02/hurb-teste.git'
     }
