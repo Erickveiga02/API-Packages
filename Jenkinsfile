@@ -6,3 +6,4 @@ node {
     stage('build projetc') {
         docker-compose up -d 
     }
+}
