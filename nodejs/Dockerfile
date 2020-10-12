@@ -9,4 +9,4 @@ USER node
 
 EXPOSE 8888
 
-CMD [ "node","src/server" ]
+CMD [ "node","/home/node/api/src/server" ]
