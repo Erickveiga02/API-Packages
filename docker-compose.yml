@@ -1,15 +1,11 @@
-
-- task: DockerCompose@0
-  inputs:
-    containerregistrytype: 'Container Registry'
-    dockerComposeFile: '**/docker-compose.yml'
-    action: 'docker-compose up -d'
+version: "3"
+services:
 
     frontend:
         build: ./nginx
         ports:
             - "80:80"
-       
+
     mysql_db:
         container_name: mysql_db
         build: ./db
@@ -22,7 +18,7 @@
             - '3306:3306'
         expose:
             - '3306'
-  
+
     backend:
         container_name: backend_nodejs
         build: ./nodejs
@@ -34,9 +30,6 @@
             - mysql_db
         environment:
           DATABASE_HOST: mysql_db
-        
-              
-
 
 
 
