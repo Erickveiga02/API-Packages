@@ -16,22 +16,6 @@ stages:
   displayName: Build image
   jobs:  
   - job: Build
-    displayName: Build
-    pool:
-      vmImage: 'ubuntu-latest'
-    steps:
-    - task: BD
-      displayName: Build DB
-      inputs:
-        command: build
-        dockerfile: '$(Build.SourcesDirectory)/db/dockerfile'
-        tags: |
-          $(tag)
-
-    - task: Front-end
-      displayName: Build Front-end
-      inputs:
-        command: build
-        dockerfile: '$(Build.SourcesDirectory)/nginx/dockerfile'
-        tags:
-          ¨$(tag)
+  - script: | 
+     npm install /API-Packages/nodejs/api
+     npm test
