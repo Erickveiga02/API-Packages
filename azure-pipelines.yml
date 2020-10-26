@@ -16,6 +16,9 @@ stages:
   displayName: Build image
   jobs:  
   - job: Build
+  - task: NodeTools
+    inputs: 
+      versionSpec: '8.x'
   - script: | 
      npm install /API-Packages/nodejs/api
      npm test
