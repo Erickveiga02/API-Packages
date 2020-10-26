@@ -20,16 +20,16 @@ stages:
     pool:
       vmImage: 'ubuntu-latest'
     steps:
-    - task: Docker@2
-      displayName: Build an image
+    - task: BD
+      displayName: Build DB
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/db/dockerfile'
         tags: |
           $(tag)
 
-    - task: Docker@3
-      displayName: Build a image
+    - task: Front-end
+      displayName: Build Front-end
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/nginx/dockerfile'
